@@ -299,11 +299,10 @@ p{
     font-size: 3.2rem;
     font-family: var(--ff-text);
 }
-/* footer{
+footer{
     bottom: 0;
-    
-    height: 256px;
+    margin-top: 8rem;
+    height: 128px;
     width: 100%;
     background-color: var(--color-footer);
 }
- */
