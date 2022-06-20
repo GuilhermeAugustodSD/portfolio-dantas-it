@@ -50,6 +50,9 @@ li{
 header h1, li{
  color: var(--color-h1);
 }
+.dantasp h1{
+    color: #FFD600;
+}
 header h1{
  font-size: 6.4rem;
 }
