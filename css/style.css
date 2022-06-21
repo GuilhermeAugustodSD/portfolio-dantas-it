@@ -48,9 +48,11 @@ header{
     color: inherit;
 }
 
+/*  
 #projetos{
     color: #262626;
 }
+*/
 ul{
     display: flex;
     gap: 2.4rem;
@@ -84,6 +86,8 @@ h1{
     top: 0;
 } */
 .conteiner{
+    transition: 1s;
+
     width: 100%;
     height: 800px;
     background-color: var(--color-h1);
@@ -92,7 +96,7 @@ h1{
     justify-content: space-between;
 }
 .left{
-    top: 8rem;
+    margin-top: 9.6rem;
     padding: 3.2rem;
 
 }
@@ -104,7 +108,6 @@ p{
     font-family: 'Audiowide', cursive;
     font-size: 2.4rem;
     width: 65rem;
-    height: 40rem;
 }
 
 .right img{
@@ -112,7 +115,7 @@ p{
     height: 68.5rem;
 }
 
-#home{
+/* #home{
 
     width: 91px;
     height: 39px;
@@ -180,8 +183,9 @@ p{
         rgba(15, 15, 15, 0.5);
     border-radius: 15px;
 }
-
+ */
 .skill {
+    transition: 1s;
     
     position: absolute;
     width: 100%;
@@ -238,6 +242,11 @@ p{
     color: #FFD600;
 
     margin-top: 6.4rem;
+}
+#vini{
+    transition: 1s;
+
+    text-align: end;
 }
 .title{
     font-size: 4.8rem;
@@ -314,6 +323,8 @@ footer{
 
 @media (max-width:1390px){
     header{
+        transition: 1s;
+
         height: 7rem;
     }
     header h1{
@@ -326,8 +337,9 @@ footer{
     #home, #perfil, #projetos, #contato{
         box-shadow: none;
     }
-  
+    
     .conteiner{
+        transition: 1s;
         width: 100%;
         height: 480px;
         background-color: var(--color-h1);
@@ -340,21 +352,29 @@ footer{
         height: 39.1rem;
     }
     #quemsomos{
+        transition: 1s;
+
         font-size: 3.6rem;
     }
     p {
+        transition: 1s;
+
         font-size: 1.6rem;
         width: 35rem;
     }
 
     .conteiner-perfil{
+        transition: 1s;
+
         width: 900px;
     }
     .skill{
         height: 14rem;
     }
     .skillsvg{
-        width: 900px;
+        transition: 1s;
+
+        width: auto;
         height: 90px;
         margin: 0 auto;
         gap: 4rem;
@@ -363,6 +383,8 @@ footer{
         font-size: 3.6rem;
     }
     .quadrados img{
+        transition: 1s;
+
         object-fit: cover; 
         margin: 0 auto;
         width:300px; 
@@ -382,5 +404,145 @@ footer{
     }
     .links a {
         font-size: 1.6rem;
+    }
+}
+@media (max-width:800px){
+    header{
+        transition: 1s;
+        
+        height: 7rem;
+    }
+    header h1{
+        font-size: 3rem;
+    }
+    header a{
+        font-size: 1.2rem;
+        gap: 2rem;
+    }
+    #home, #perfil, #projetos, #contato{
+        box-shadow: none;
+    }
+  
+    .conteiner{
+        transition: 1s;
+
+        width: 100%;
+        height: 650px;
+        background-color: var(--color-h1);
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .right{
+        transition: 1s;
+
+        margin: 0 auto;
+    }
+    .right img{
+        width: 39rem;
+        height: 39.1rem;
+        justify-content: center;
+    }
+    #quemsomos{
+        text-align: center;
+        font-size: 3.6rem;
+    }
+    p {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+    .title{
+        transition: 1s;
+
+        font-size: 3.2rem;
+    }
+    .conteiner-perfil{
+        width: auto;
+    }
+    #vini{
+        text-align: center;
+    }
+    .dantasp{
+        transition: 1s;
+
+        display: flex;
+        gap: 5rem;
+        flex-direction: column;
+    }
+    .perfil{
+        text-align: center;
+    }
+    #h1skills{
+        margin-top: 40rem;
+    }
+    .skill{
+        transition: 1s;
+
+        height: 8rem;
+    }
+    .skillsvg{
+        width: auto;
+        height: 30px;
+        margin: 0 auto;
+        gap: 4rem;
+    }
+    .projetos{
+        transition: 1s;
+
+        margin-top: 20rem;
+    }
+    .projetos h1{
+        font-size: 3.6rem;
+    }
+    .quadrados img{
+        object-fit: cover; 
+        margin: 0 auto;
+        width:400px; 
+        height: 250px;
+    }
+    .conteinerQ{
+        transition: 1s;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 3.2rem;
+        margin: 0;
+    }
+
+
+    .links button {
+        width: 12rem;
+        height: 4.2rem;
+
+        font-size: 1.6rem;
+    }
+    .links a {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:600px){
+    #h1skills{
+        margin-top: 40rem;
+    }
+    .skill{
+        height: 8rem;
+    }
+    .skillsvg{
+        width: auto;
+        height: 30px;
+        margin: 0 auto;
+        gap: 4rem;
+    }
+    @keyframes float{
+        0%, 100%{
+            transform: translateY(0px);
+        }
+    
+        50%{
+            transform: translateY(10px);
+        }
+    
     }
 }
