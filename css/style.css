@@ -23,6 +23,10 @@ body{
     background-color: var(--color-background);
 }
 header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     
@@ -31,6 +35,9 @@ header{
     height: 94px;
     
     background-color: #262626;
+}
+main{
+    margin-top: 9.4rem;
 }
 /* main{
     width: 100%;
@@ -86,7 +93,7 @@ h1{
     top: 0;
 } */
 .conteiner{
-    transition: 1s;
+    transition: 600ms;
 
     width: 100%;
     height: 800px;
@@ -96,7 +103,7 @@ h1{
     justify-content: space-between;
 }
 .left{
-    margin-top: 9.6rem;
+    /* margin-top: 9.6rem; */
     padding: 3.2rem;
 
 }
@@ -185,7 +192,7 @@ p{
 }
  */
 .skill {
-    transition: 1s;
+    transition: 600ms;
     
     position: absolute;
     width: 100%;
@@ -244,7 +251,7 @@ p{
     margin-top: 6.4rem;
 }
 #vini{
-    transition: 1s;
+    transition: 600ms;
 
     text-align: end;
 }
@@ -323,7 +330,7 @@ footer{
 
 @media (max-width:1390px){
     header{
-        transition: 1s;
+        transition: 600ms;
 
         height: 7rem;
     }
@@ -337,9 +344,11 @@ footer{
     #home, #perfil, #projetos, #contato{
         box-shadow: none;
     }
-    
+    main{
+        margin-top: 7rem;
+    }
     .conteiner{
-        transition: 1s;
+        transition: 600ms;
         width: 100%;
         height: 480px;
         background-color: var(--color-h1);
@@ -352,19 +361,19 @@ footer{
         height: 39.1rem;
     }
     #quemsomos{
-        transition: 1s;
+        transition: 600ms;
 
         font-size: 3.6rem;
     }
     p {
-        transition: 1s;
+        transition: 600ms;
 
         font-size: 1.6rem;
         width: 35rem;
     }
 
     .conteiner-perfil{
-        transition: 1s;
+        transition: 600ms;
 
         width: 900px;
     }
@@ -372,7 +381,7 @@ footer{
         height: 14rem;
     }
     .skillsvg{
-        transition: 1s;
+        transition: 600ms;
 
         width: auto;
         height: 90px;
@@ -383,7 +392,7 @@ footer{
         font-size: 3.6rem;
     }
     .quadrados img{
-        transition: 1s;
+        transition: 600ms;
 
         object-fit: cover; 
         margin: 0 auto;
@@ -408,7 +417,7 @@ footer{
 }
 @media (max-width:800px){
     header{
-        transition: 1s;
+        transition: 600ms;
         
         height: 7rem;
     }
@@ -424,7 +433,7 @@ footer{
     }
   
     .conteiner{
-        transition: 1s;
+        transition: 600ms;
 
         width: 100%;
         height: 650px;
@@ -434,7 +443,7 @@ footer{
         justify-content: space-around;
     }
     .right{
-        transition: 1s;
+        transition: 600ms;
 
         margin: 0 auto;
     }
@@ -452,7 +461,7 @@ footer{
         width: 100%;
     }
     .title{
-        transition: 1s;
+        transition: 600ms;
 
         font-size: 3.2rem;
     }
@@ -463,7 +472,7 @@ footer{
         text-align: center;
     }
     .dantasp{
-        transition: 1s;
+        transition: 600ms;
 
         display: flex;
         gap: 5rem;
@@ -474,9 +483,10 @@ footer{
     }
     #h1skills{
         margin-top: 40rem;
+        font-size: 3.6rem;
     }
     .skill{
-        transition: 1s;
+        transition: 600ms;
 
         height: 8rem;
     }
@@ -487,7 +497,7 @@ footer{
         gap: 4rem;
     }
     .projetos{
-        transition: 1s;
+        transition: 600ms;
 
         margin-top: 20rem;
     }
@@ -501,7 +511,7 @@ footer{
         height: 250px;
     }
     .conteinerQ{
-        transition: 1s;
+        transition: 600ms;
 
         display: flex;
         flex-direction: column;
@@ -525,6 +535,7 @@ footer{
 @media (max-width:600px){
     #h1skills{
         margin-top: 40rem;
+        font-size: 3.6rem;
     }
     .skill{
         height: 8rem;
