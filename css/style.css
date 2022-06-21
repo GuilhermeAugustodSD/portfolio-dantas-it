@@ -8,6 +8,7 @@ font-family: 'Audiowide', cursive; */
 }
 :root{
     font-size: 62.5%;
+
     --color-h1: #FFD600;
     --color-background: #0D0D0D;
     --color-text: #A6A6A6;
@@ -27,19 +28,18 @@ header{
     
     align-items: center;
     padding: 20px;
-    width: 100%;
     height: 94px;
     
     background-color: #262626;
 }
-main{
+/* main{
     width: 100%;
     height: 80rem;
     background-color: var(--color-h1);
 
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .nav a{
     text-align: center;
@@ -77,17 +77,19 @@ h1{
     font-family: var(--ff-title);
     font-size: 4.8rem;
 }
-svg{
+/* svg{
     position: relative;
     width: 100%;
     left: 0;
     top: 0;
-}
+} */
 .conteiner{
     width: 100%;
-    position: absolute;
+    height: 800px;
+    background-color: var(--color-h1);
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .left{
     top: 8rem;
@@ -259,9 +261,8 @@ p{
 }
 .conteinerQ{
     display: flex;
+    justify-content: center;
     gap: 3.2rem;
-    margin: 0 auto;
-    width: 1264px;
 }
 .projetos{
     margin-top: 50rem;
@@ -273,10 +274,14 @@ p{
 }
 .quadrados{
 
-    width: 40rem;
-    height: 29.6rem;
-    background-color: var(--color-footer);
+    /* width: 40rem;
+    height: 29.6rem; */
     margin-bottom: 3.2rem;
+}
+.quadrados img{
+    object-fit: cover; 
+    width:400px; 
+    height: 296px;
 }
 .links{
     display: flex;
@@ -305,4 +310,77 @@ footer{
     height: 128px;
     width: 100%;
     background-color: var(--color-footer);
+}
+
+@media (max-width:1390px){
+    header{
+        height: 7rem;
+    }
+    header h1{
+        font-size: 4rem;
+    }
+    header a{
+        font-size: 2rem;
+        box-shadow: none;
+    }
+    #home, #perfil, #projetos, #contato{
+        box-shadow: none;
+    }
+  
+    .conteiner{
+        width: 100%;
+        height: 480px;
+        background-color: var(--color-h1);
+        margin: 0 auto;
+
+        justify-content: space-around;
+    }
+    .right img{
+        width: 39rem;
+        height: 39.1rem;
+    }
+    #quemsomos{
+        font-size: 3.6rem;
+    }
+    p {
+        font-size: 1.6rem;
+        width: 35rem;
+    }
+
+    .conteiner-perfil{
+        width: 900px;
+    }
+    .skill{
+        height: 14rem;
+    }
+    .skillsvg{
+        width: 900px;
+        height: 90px;
+        margin: 0 auto;
+        gap: 4rem;
+    }
+    .projetos h1{
+        font-size: 3.6rem;
+    }
+    .quadrados img{
+        object-fit: cover; 
+        margin: 0 auto;
+        width:300px; 
+        height: 196px;
+    }
+    .conteinerQ{
+        display: flex;
+        justify-content: center;
+        gap: 3.2rem;
+    }
+
+    .links button {
+        width: 12rem;
+        height: 4.2rem;
+
+        font-size: 1.6rem;
+    }
+    .links a {
+        font-size: 1.6rem;
+    }
 }
